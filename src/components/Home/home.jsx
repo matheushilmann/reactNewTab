@@ -28,7 +28,6 @@ export function Home(props) {
             id = {user.id}
             username = {user.username}
             onClick={() => {
-              modalOpen(user);
             }}
           />
         )})
