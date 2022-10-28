@@ -11,12 +11,8 @@ export function Home(props) {
 
   useEffect(() => { // Evitar loop na lista
     axios.get('https://www.mocky.io/v2/5d531c4f2e0000620081ddce') // Pegar dados da API (GET)
-      .then(response => {
-        setUsers(response.data);
-      })
-      .catch(error => { 
-        console.log(error);
-      })
+      .then(response => {setUsers(response.data);})
+      .catch(error => { console.log(error); })
   }, []);
 
 
